@@ -1,5 +1,6 @@
 package com.zomato.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             val c = (a + b).toString()
 
             textView.text = c
+        }
+
+        button4.setOnClickListener {
+            startActivity(Intent(this, ListActivity::class.java))
         }
     }
 }
