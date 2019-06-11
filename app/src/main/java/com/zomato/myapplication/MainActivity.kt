@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         button4.setOnClickListener {
-            startActivity(Intent(this, ListActivity::class.java))
+//            startActivity(Intent(this, ListActivity::class.java))
+            startActivity(Intent(this, RestListActivity::class.java))
         }
     }
 }
