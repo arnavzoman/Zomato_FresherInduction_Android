@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
+import com.zomato.myapplication.reqres.ReqResActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         button4.setOnClickListener {
 //            startActivity(Intent(this, ListActivity::class.java))
-            startActivity(Intent(this, RestListActivity::class.java))
+//            startActivity(Intent(this, RestListActivity::class.java))
+            startActivity(Intent(this, ReqResActivity::class.java))
         }
     }
 }
